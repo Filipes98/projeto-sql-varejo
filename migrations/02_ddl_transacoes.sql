@@ -24,7 +24,7 @@ CREATE TABLE itens_venda (
     id_venda INT REFERENCES vendas(id_venda),
     id_produto INT REFERENCES produtos(id_produto),
     quantidade INT NOT NULL,
-    preco_unitario DECIMAL(10, 2) NOT NULL
+    preco_unitario DECIMAL(10, 2) NOT NULL,
     PRIMARY KEY (id_venda, id_produto) -- uma venda pode ter vários produtos, mas cada produto só pode aparecer uma vez por venda
 );
 
