@@ -36,4 +36,4 @@ CREATE TABLE controle_financeiro (
     local_compra VARCHAR(100),
     valor DECIMAL(10, 2) NOT NULL,
     data_despesa DATE DEFAULT CURRENT_DATE
-);
+); 
